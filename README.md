@@ -27,6 +27,12 @@ Add these values into the application.properties file.
 - AWS
     - S3
     - EC2
+##Contributors
+- Miguel Garcia
+- Nadjah Robinson
+- Nagma Bardoi
+- Donna Bond
+- Petra Maurer
 
 ### Development server - Angular
 Run ```ng serve``` for a dev server. Navigate to ```http://localhost:4200/```.  The app will automatically reload if you change any of the source files.
