@@ -27,7 +27,8 @@ Add these values into the application.properties file.
 - AWS
     - S3
     - EC2
-##Contributors
+    
+## Contributors
 - Miguel Garcia
 - Nadjah Robinson
 - Nagma Bardoi
