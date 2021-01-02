@@ -1,0 +1,80 @@
+<router-outlet></router-outlet>
+
+<mat-card>
+  <mat-card-content>
+      <form name="register-form" (ngSubmit)="onSubmit()">
+          <h2>Create new MoonVerse account!</h2>
+          <br>
+          <div>
+              <mat-error *ngIf="registerInvalid">
+                  Account for this email exists, please use another email.
+               </mat-error>
+              <label for="email">Email</label>
+              <mat-form-field class="full-width-input">
+                  <input matInput type="text" name="email" [(ngModel)]="user.email" #email="ngModel" required />
+                  <mat-error>
+                      Email Address required
+                  </mat-error>
+              </mat-form-field> 
+          </div>
+          <br>
+          <br>
+          <div>
+              <label for="password">Password</label>
+              <mat-form-field class="full-width-input">
+                  <input matInput type="password" name="password" [(ngModel)]="user.password" #password="ngModel" required />
+                  <mat-error>
+                      Password Required
+                  </mat-error>
+                  <br>
+              </mat-form-field>
+          </div>
+          <br>
+          <br>
+          <div>
+            <label for="firstName">First Name</label>
+            <mat-form-field class="full-width-input">
+                <input matInput type="text" name="firstName" [(ngModel)]="user.firstName" #firstName="ngModel" required />
+                <mat-error>
+                    First Name Required
+                </mat-error>
+                <br>
+            </mat-form-field>
+        </div>
+          <br>
+          <br>
+          <div>
+            <label for="lastName">Last Name</label>
+            <mat-form-field class="full-width-input">
+                <input matInput type="text" name="lastName" [(ngModel)]="user.lastName" #lastName="ngModel" required />
+                <mat-error>
+                    Last Name Required
+                </mat-error>
+                <br>
+            </mat-form-field>
+        </div>
+          <br>
+          <br>
+          <div>
+            <label for="birthDate">Birth Date</label>
+            <mat-form-field class="full-width-input">
+                <input matInput type="date" name="birthDate" [(ngModel)]="user.birthDate" #birthDate="ngModel" required />
+                <mat-error>
+                    Birth Date Required
+                </mat-error>
+                <br>
+            </mat-form-field>
+        </div>
+          <br>
+          <br>
+          <div>
+              <button mat-raised-button type=submit  value=register>Register</button>
+          </div>
+      </form>
+      <br>
+      <div>
+          <a routerLink="/login">Return to Login</a>
+      </div>
+
+  </mat-card-content>
+</mat-card>

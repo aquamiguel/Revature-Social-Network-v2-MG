@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class="navbar-nav">
+        
+      <li class="nav-item">
+        <a routerLink="users" class="nav-link" routerLink="/feed">Home</a>
+    </li>   
+    <li class="nav-item">
+      <a routerLink="users" class="nav-link" routerLink="/profile">Profile</a>
+    </li>  
+    <li class="nav-item">
+    <a class="nav-link" routerLink="/login">Logout</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/posts">Post</a>
+    </li>
+    <div class= "container">
+    <form class="form-inline" >
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>   
+</div>
+    </ul>
+    
+    </nav>
+
+
+<h3>Global feed</h3>
+<router-outlet></router-outlet> <!--don't forget this..you'll regret it-->
+
+<div id="cards" class="card w-80 text-center"  
+*ngFor="let post of posts| reverse" style="margin:2%;">
+    
+    <div class="card-header">
+        <!-- <a href="#" class="card-link"> user {{post.user.userId}}</a>
+        <a href="#" class="card-link"> post {{post.postId}}</a> -->
+    </div>
+    <img class="card-img-top"  src={{post.postMediaUrl}} alt="Card image cap" width="500" height="600">
+    <div class="card-body">
+      <p class="card-text">{{post.postText}}</p>
+      <footer class="blockquote-footer text-right"> {{post.user.firstName}} {{post.user.lastName}} 
+          <cite title="Source Title"> on {{post.postDate}}</cite>
+        </footer>
+    </div>
+    <div class="card-footer text-muted text-right">
+        <button type="button" data-toggle="button" id="like-button" (click)="like(post.countLikes)"
+            class="btn btn-outline-primary btn-sm" autocomplete="off" 
+                style="margin: 2%">Like
+        </button>{{post.countLikes}} likes
+        <!-- add  like fuinction to like buttons-->
+    </div>
+</div>
+
+

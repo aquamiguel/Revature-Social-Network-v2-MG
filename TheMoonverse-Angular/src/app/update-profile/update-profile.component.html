@@ -1,0 +1,53 @@
+<router-outlet></router-outlet>
+
+<div id="card">
+      <form name="profile-form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <h2>Update Profile!</h2>
+          <br>
+          <div class="form-group">
+              <label for="aboutMe">About Me</label> <br>
+                <input type="text" name="aboutMe" [(ngModel)]="profile.aboutMe" #aboutMe="ngModel" required />
+                <br>
+          </div>
+          <br>
+          <div class="form-group">
+              <label for="age">Age</label> <br>
+                  <input type="text" name="age" [(ngModel)]="profile.age" #age="ngModel" required />
+                  <br>
+          </div>
+          <br>
+          <div class="form-group">
+              <label for="city">City</label> <br>
+                  <input type="text" name="city" [(ngModel)]="profile.city" #city="ngModel" required />
+                  <br>
+          </div>
+          <br>
+          <div class="form-group">
+              <label for="profession">Profession</label> <br>
+                  <input type="text" name="profession" [(ngModel)]="profile.profession" #profession="ngModel" required />
+                  <br>
+          </div>
+          <br>
+          <div class="form-group">
+              <label for="favoritePlanet">Favorite Planet</label> <br>
+                  <input type="text" name="favoritePlanet" [(ngModel)]="profile.favoritePlanet" #favoritePlanet="ngModel" required />
+                  <br>
+          </div>
+          <br>
+          <div class="form-group">
+              <label for="profilePicture">Profile Picture</label><br>
+                <input type="file" name="profilePicture" [(ngModel)]="profile.profilePicture" #profilePicture="ngModel"/> <br>
+                  <br>
+          </div>
+          <br>
+          <div>
+              <button type=submit value=submit>Update Profile</button>
+          </div>
+    </div>
+    </form>
+      <br>
+      <div>
+          <a routerLink="/profile">Back to Profile</a>
+      </div>
+</div>

@@ -1,0 +1,16 @@
+#card {
+    max-width: 400px;
+    margin: 2em auto;
+    text-align: center;
+  }
+form {
+  display: block;
+}
+
+input {
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: blue; 
+  border-radius: 5px;
+}
