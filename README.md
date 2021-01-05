@@ -1,5 +1,8 @@
 # TheMoonVerse
 
+## Project Description
+In this web application every Revature employee can connect to other employees, whether it be an associate, a trainer, or contracted employees. Each person has their own account, that comes with a unique username, Revature employee information. Within this network employees can access locations and information to help them with many different possibilities. Also it is being created to ease the transition as a Revature employee, whether it be as a trainer/associate, contracted employee/contractor, or staff member.
+
 This project was generated with [Angular CLI](https://github.com/Java-Techie-jt/spring-security-angular-example) version 11.0.3.
 
 ## Project Setup
@@ -14,7 +17,7 @@ Add these values into the application.properties file.
 - Run the command ```npm install``` to install the correct packages.
 - Run the command ```npm serve -o``` to run the angular app. It will automatically open in the browser on ```http://localhost:4200/```.
 
-## Tech
+## Technologies
 - [Trello - Meetings & Administration](https://trello.com/b/uvCDekqY/the-moonverse-meetings-administration)
 - [Trello - User Stories](https://trello.com/b/WTO41OAX/project-2-user-stories)
 - Spring MVC/SpringBoot
