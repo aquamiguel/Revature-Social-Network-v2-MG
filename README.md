@@ -18,6 +18,7 @@ This project was generated with [Angular CLI](https://github.com/Java-Techie-jt/
 - AWS
     - S3
     - EC2
+    - RDS
     
 ## Features
 * Users are able to login
